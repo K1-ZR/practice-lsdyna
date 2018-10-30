@@ -1,0 +1,47 @@
+#!/bin/tcsh
+# Change the job name, if you want to
+#SBATCH --job-name=tube-mmp
+
+# Change the number of cpu's, if you want to
+#SBATCH --ntasks=4
+
+# Change the cpu requested time (walltime), if you need to
+#SBATCH --time=01:00:00
+
+
+# ##################################################################
+#  system memory - this is a lot and doesn't need changing
+#    What you might have to change is the memory command on the
+#    LS-Dyna "mpirun" command near the bottom, but probably not.
+# ##################################################################
+
+#SBATCH --mem-per-cpu=3072
+
+# #########################
+#    Do not change these
+# #########################
+
+#SBATCH --error=std-err.%J
+#SBATCH --output=std-out.%J
+#SBATCH --qos=short
+
+# LOAD MPI AND DYNA ENVIRONMENT
+module load lsdyna/9.0.1
+
+#GLOBAL/LOCAL for pfile (MPP DYNA) - automatic
+mkdir d.results
+mkdir d.dump-files
+echo "directory { global ./d.results local ./d.dump-files }" > pfile
+
+# #################
+#    Run LS-Dyna
+# #################
+/bin/date > time-start
+
+# Change dyna deck file name
+# Change memory requirement, if you need to
+
+mpirun mpp971_s p=pfile memory=256m i=tube-time-step.k
+
+/bin/date > time-end
+
