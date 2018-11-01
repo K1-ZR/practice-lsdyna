@@ -43,3 +43,26 @@ dos2unix <filename>
 ```shell
 du
 ```
+# Examples
+* logon to tusker
+```shell
+# check your current directory
+pwd
+
+# move to work directory
+work
+```
+* run a LS-Dyna job
+```shell
+sbatch <lsdyna-slurm-smp>
+```
+* monitor jobs
+```shell
+sq
+```
+* delete unnecessary outputs
+```shell 
+rmd3
+```
+**note:** When LS-Dyna actually starts a file named `time-start` is created.  
+          when LS-Dyna actually ends a file named `time-end` is created.
