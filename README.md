@@ -1,6 +1,6 @@
-[Setup - mac/linux](https://github.com/K1-ZR/practice-lsdyna/wiki#setup---maclinux)  
-[Setup - windows](https://github.com/K1-ZR/practice-lsdyna/wiki#setup---windows)  
-[Useful Unix Commands](https://github.com/K1-ZR/practice-lsdyna/wiki#useful-unix-commands)
+* [Setup - mac/linux](https://github.com/K1-ZR/practice-lsdyna/wiki#setup---maclinux)  
+* [Setup - windows](https://github.com/K1-ZR/practice-lsdyna/wiki#setup---windows)  
+* [Useful Unix Commands](https://github.com/K1-ZR/practice-lsdyna/wiki#useful-unix-commands)
 
 # Setup - mac/linux
 * create an account on HCC
