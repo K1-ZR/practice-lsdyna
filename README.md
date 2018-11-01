@@ -1,6 +1,7 @@
 * [Setup - mac/linux](https://github.com/K1-ZR/practice-lsdyna#setup---maclinux)  
 * [Setup - windows](https://github.com/K1-ZR/practice-lsdyna#setup---windows)  
 * [Useful Unix Commands](https://github.com/K1-ZR/practice-lsdyna#useful-unix-commands)
+* [Example](https://github.com/K1-ZR/practice-lsdyna#example)  
 
 # Setup - mac/linux
 * create an account on HCC
@@ -43,7 +44,7 @@ dos2unix <filename>
 ```shell
 du
 ```
-# Examples
+# Example
 * logon to tusker
 ```shell
 # check your current directory
