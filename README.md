@@ -53,6 +53,7 @@ pwd
 # move to work directory
 work
 ```
+* you need a .k file(s) and a slurm file to run amodel
 * run a LS-Dyna job
 ```shell
 sbatch <lsdyna-slurm-smp>
