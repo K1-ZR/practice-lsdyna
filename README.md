@@ -30,10 +30,10 @@ $ scp -r <username>@tusker.unl.edu:/work/<group_name>/<username>/<folder_name> .
     * requires setting up Duo on your phone
 ## Access
 * install Putty - a terminal emulator
-    * use <tusker.unl.edu> as the hostname
+    * use `tusker.unl.edu` as the hostname
 ## File transferring
 * install WinSCP - a program to transfer files between computers
-    * use <tusker.unl.edu> as the hostname
+    * use `tusker.unl.edu` as the hostname
 
 # Useful Unix commands
 * to fix the problem caused by transferring ASCII files using the binary or automatic option in WinSCP:
