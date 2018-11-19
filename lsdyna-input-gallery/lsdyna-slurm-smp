@@ -1,0 +1,45 @@
+#!/bin/tcsh
+# Change the job name, if you want to
+#SBATCH --job-name=oneelement  
+
+# Change the number of cpu's, if you want to
+#SBATCH --ntasks=1
+
+# Change the cpu requested time (walltime), if you need to
+#SBATCH --time=01:00:00
+
+
+# ##################################################################
+#  system memory - this is a lot and doesn't need changing
+#    What you might have to change is the memory command on the
+#    LS-Dyna "mpirun" command near the bottom, but probably not.
+# ##################################################################
+
+#SBATCH --mem-per-cpu=3072
+
+# #########################
+#    Do not change these
+# #########################
+
+#SBATCH --error=std-err.%J
+#SBATCH --output=std-out.%J
+
+#SBATCH --qos=short
+
+# LOAD MPI AND DYNA ENVIRONMENT
+module load lsdyna/9.0.1
+
+# #################
+#    Run LS-Dyna
+# #################
+/bin/date > time-start
+
+# Change dyna deck file name
+# Change memory requirement, if you need to
+# Change ncpu to match ntasks from above
+
+ls971_s memory=256m ncpu=4 i=one-element-loadcontrol.k 
+
+
+/bin/date > time-end
+
