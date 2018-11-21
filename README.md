@@ -67,4 +67,16 @@ sq
 rmd3
 ```
 **note:** When LS-Dyna actually starts a file named `time-start` is created.  
-          when LS-Dyna actually ends a file named `time-end` is created.
+          when LS-Dyna actually ends a file named `time-end` is created.  
+# LS-PREPOST
+* Model
+   * SelPart - *turn parts on/off*
+* EleTol
+   * Blank - *mask/hide portions of model*
+   * Ident - *identify id of nodes/elements/parts*
+   * Measur - *measure distance, angle, mass, etc. *
+* Post
+   * Vector - *plot vectors*
+   * FriComp - *generate fringe plots*
+   * FriRange - *st range for fringe plots*
+   * ASCII - *plot time history data from elout, ndout, secforc, rwforc, etc. *
