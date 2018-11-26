@@ -58,13 +58,18 @@ work
 ```shell
 sbatch <lsdyna-slurm-smp>
 ```
-* monitor jobs
+* to monitor jobs
 ```shell
 sq
 ```
-* delete unnecessary outputs
+* to delete unnecessary outputs
 ```shell 
 rmd3
+```
+* to kill a job
+```shell
+to kill a job 
+touch d3kil
 ```
 **note:** When LS-Dyna actually starts a file named `time-start` is created.  
           when LS-Dyna actually ends a file named `time-end` is created.  
