@@ -1,6 +1,5 @@
 * [Setup - mac/linux](https://github.com/K1-ZR/practice-lsdyna#setup---maclinux)  
 * [Setup - windows](https://github.com/K1-ZR/practice-lsdyna#setup---windows)  
-* [Useful Unix Commands](https://github.com/K1-ZR/practice-lsdyna#useful-unix-commands)
 * [Example](https://github.com/K1-ZR/practice-lsdyna#example)  
 
 # Setup - mac/linux
@@ -34,16 +33,6 @@ $ scp -r <username>@tusker.unl.edu:/work/<group_name>/<username>/<folder_name> .
 ## File transferring
 * install WinSCP - a program to transfer files between computers
     * use `tusker.unl.edu` as the hostname
-
-# Useful Unix commands
-* to fix the problem caused by transferring ASCII files using the binary or automatic option in WinSCP:
-```shell
-dos2unix <filename>
-```
-* show the sizes of the files and totals in the current directory
-```shell
-du
-```
 # Example
 * logon to tusker
 ```shell
