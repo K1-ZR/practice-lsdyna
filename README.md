@@ -29,10 +29,10 @@ $ scp -r <username>@tusker.unl.edu:/work/<group_name>/<username>/<folder_name> .
     * requires setting up Duo on your phone
 ## Access
 * install Putty - a terminal emulator
-    * use `tusker.unl.edu` as the hostname
+    * for hpc use `tusker.unl.edu` or `crane.unl.edu` as the hostname
 ## File transferring
 * install WinSCP - a program to transfer files between computers
-    * use `tusker.unl.edu` as the hostname
+    * for hpc use `tusker.unl.edu` or `crane.unl.edu` as the hostname
 # Example
 * logon to tusker
 ```shell
@@ -45,11 +45,11 @@ work
 * you need a .k file(s) and a slurm file to run amodel
 * run a LS-Dyna job
 ```shell
-sbatch <lsdyna-slurm-smp>
+sbatch <slurm-file-name>
 ```
 * to monitor jobs
 ```shell
-sq
+squeue -u <username>
 ```
 * to delete unnecessary outputs
 ```shell 
@@ -57,8 +57,9 @@ rmd3
 ```
 * to kill a job
 ```shell
-to kill a job 
 touch d3kil
+# or
+scancel <JobID>
 ```
 **note:** When LS-Dyna actually starts a file named `time-start` is created.  
           when LS-Dyna actually ends a file named `time-end` is created.  
