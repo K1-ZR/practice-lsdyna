@@ -36,9 +36,6 @@ $ scp -r <username>@tusker.unl.edu:/work/<group_name>/<username>/<folder_name> .
 # Example
 * logon to the hpc center
 ```shell
-# check your current directory
-pwd
-
 # move to work directory
 cd $WORK
 ```
