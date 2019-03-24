@@ -23,7 +23,7 @@ $ scp -r <username>@tusker.unl.edu:/work/<group_name>/<username>/<folder_name> .
 # from the $WORK directory of the supercomputer, to the current directory (./).
 ```
 ### Use Cyberduck
-* follow [this link](https://hcc-docs.unl.edu/pages/viewpage.action?pageId=2851290).
+* follow [this link](https://hcc.unl.edu/docs/quickstarts/connecting/for_maclinux_users/#using-cyberduck).
 # Setup - windows
 * create an account on HCC
     * requires setting up Duo on your phone
